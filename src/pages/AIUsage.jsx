@@ -18,7 +18,6 @@ function AIUsage() {
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
-            <span className="star">☕</span>
             AI Usage - Minh Bạch AI
           </h1>
           <p className="hero-subtitle">

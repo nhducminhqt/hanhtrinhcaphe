@@ -5,6 +5,7 @@ import "./Navigation.css";
 function Navigation() {
   const location = useLocation();
   const [showNav, setShowNav] = useState(true);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const lastScrollY = useRef(0);
   const lastKnownY = useRef(0);
   const ticking = useRef(false);
@@ -69,6 +70,10 @@ function Navigation() {
     };
   }, []);
 
+  const handleMenuClick = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <nav
       className={`navigation ${!showNav ? "nav-hidden" : ""} ${
@@ -81,9 +86,25 @@ function Navigation() {
           <span className="logo-text">Hành Trình Giọt Cà Phê</span>
         </Link>
 
-        <ul className="nav-menu">
+        <button
+          className="mobile-menu-toggle"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          <span className={`hamburger ${mobileMenuOpen ? "open" : ""}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+        <ul className={`nav-menu ${mobileMenuOpen ? "mobile-open" : ""}`}>
           <li>
-            <Link to="/" className={location.pathname === "/" ? "active" : ""}>
+            <Link
+              to="/"
+              className={location.pathname === "/" ? "active" : ""}
+              onClick={handleMenuClick}
+            >
               Trang chủ
             </Link>
           </li>
@@ -91,6 +112,7 @@ function Navigation() {
             <Link
               to="/theory"
               className={location.pathname === "/theory" ? "active" : ""}
+              onClick={handleMenuClick}
             >
               Lý thuyết
             </Link>
@@ -99,6 +121,7 @@ function Navigation() {
             <Link
               to="/practice"
               className={location.pathname === "/practice" ? "active" : ""}
+              onClick={handleMenuClick}
             >
               Giá Trị
             </Link>
@@ -107,6 +130,7 @@ function Navigation() {
             <Link
               to="/quiz"
               className={location.pathname === "/quiz" ? "active" : ""}
+              onClick={handleMenuClick}
             >
               Trò Chơi
             </Link>
@@ -116,6 +140,7 @@ function Navigation() {
               href="https://www.facebook.com/profile.php?id=61581248485989"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleMenuClick}
             >
               Fanpage
             </a>
