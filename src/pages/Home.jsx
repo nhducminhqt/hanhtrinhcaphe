@@ -21,7 +21,6 @@ function Home() {
           <p className="hero-subtitle">
             "Mỗi giọt cà phê là một câu chuyện."
           </p>
-          <p className="hero-author">- Giáo Viên Nguyễn Thị Ái Thùy</p>
         </div>
       </section>
 

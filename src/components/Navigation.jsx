@@ -137,12 +137,12 @@ function Navigation() {
           </li>
           <li>
             <a
-              href="https://www.facebook.com/profile.php?id=61581248485989"
+              href="https://www.google.com/maps/d/u/0/viewer?mid=1C9yz-JcY08e2Ewm-utY-bUvAaqxOG3M&ll=14.491282438400654%2C107.91841605&z=14"
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleMenuClick}
             >
-              Fanpage
+              Địa chỉ
             </a>
           </li>
         </ul>

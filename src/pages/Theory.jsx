@@ -125,7 +125,7 @@ function Theory() {
             </div>
 
             <div className="section-image">
-              <img src="/trong_trot.jpg" alt="Trồng trọt cà phê" />
+              <img src="/thu_hoach.jpg" alt="Trồng trọt cà phê" />
             </div>
           </div>
         </section>
@@ -188,7 +188,7 @@ function Theory() {
             </div>
 
             <div className="section-image">
-              <img src="/thu_hoach.jpg" alt="Thu hoạch cà phê" />
+              <img src="/trong_trot.jpeg" alt="Thu hoạch cà phê" />
             </div>
           </div>
         </section>
@@ -252,7 +252,7 @@ function Theory() {
             </div>
 
             <div className="section-image">
-              <img src="/pha_che.webp" alt="Pha chế cà phê" />
+              <img src="/pha_che.jpeg" alt="Pha chế cà phê" />
             </div>
           </div>
         </section>
