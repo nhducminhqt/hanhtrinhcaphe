@@ -1,10 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import "./Chatbot.css";
 
-// Gemini API configuration - using Google AI Studio endpoint
-const API_KEY =
-  import.meta.env.VITE_GEMINI_API_KEY ||
-  "AIzaSyC2KtK0V5m3yWdVlQjAa-8k0h97XALP4EE";
+// Gemini API configuration - API Key từ Vercel Environment Variables
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 
 function Chatbot() {
